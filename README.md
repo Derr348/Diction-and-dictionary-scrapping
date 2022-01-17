@@ -28,7 +28,7 @@ writer = csv.writer(file)
 writer.writerow(['Quote','Author'])
 
 #REQUEST WEBPAGE AND STORE IT AS A VARIABLE
-page_to_scrape = requests.get("https://quotes.toscrape.com/")
+page_to_scrape = requests.get("http://www.puzzlers.org/pub/wordlists/unixdict.txt")
 
 #USE BEAUTIFULSOUP TO PARSE THE HTML AND STORE IT AS A VARIABLE
 soup = BeautifulSoup(page_to_scrape.text,'html.parser')
